@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+:root{
+    --SecoundColor : #00ffe0
+}
+
+body{
+    background-color: black;
+    color: white;
+}
+.bg{
+    background: linear-gradient(202deg,rgba(255, 230, 0, 1) 8%, rgba(0, 224, 255, 1) 55%);
+}
+.trans20{
+    transform: rotate(20deg);
+}
+.Character{
+    transform: rotate(-20deg);
+}
+.PlusBtn{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    bottom: -16px;
+}
+.shadow{
+    transform-style: preserve-3d;
+}
+.shadow::before {
+    content: "";
+    position: absolute; 
+    inset: 10px;
+    background: conic-gradient(from 90deg at 40% -25%, rgba(255, 230, 0, 1) , rgba(0, 224, 255, 1));
+    filter: blur(43px);
+    transform: translate3d(0px,0px,-1px);
+    border-radius: inherit;
+    pointer-events: none;
+}
+.splide__arrow , .splide__pagination li{
+    display: none !important;
+}
+.css-k0b1kr-MuiPaper-root-MuiAccordion-root{
+    background-color : black !important;
+    color: #fff !important;
+}
+.bgItems{
+    background-image: url('../assets/images/div.cta-bg.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.ant-select-focused:where(.css-dev-only-do-not-override-1261szd).ant-select-outlined:not(.ant-select-disabled):not(.ant-select-customize-input):not(.ant-pagination-size-changer) .ant-select-selector{
+    background-color: #ffffff33;
+    color: white;
+}

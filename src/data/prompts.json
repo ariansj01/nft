@@ -1,0 +1,73 @@
+{
+    "prompts": [
+        {
+            "id": 1,
+            "title": "Create a futuristic cityscape",
+            "content": "Generate a detailed description of a futuristic city with flying cars, neon lights, and advanced technology.",
+            "dateAdd": "2024-03-20",
+            "creator": "AI Artist",
+            "likes": 245,
+            "tags": ["Cityscape", "Futuristic", "Sci-Fi", "Architecture", "Technology"],
+            "creatorImage": "/images/NFT-1.svg",
+            "description": "This prompt helps you create detailed descriptions of futuristic cityscapes. Perfect for world-building, concept art, or storytelling. The generated content includes architectural details, technological elements, and atmospheric descriptions.",
+            "examples": [
+                "A city where buildings float in the air, connected by transparent walkways",
+                "Neon-lit streets with holographic advertisements and robotic vendors",
+                "Underground transportation systems with magnetic levitation trains"
+            ],
+            "tips": [
+                "Specify the time period (near future, far future)",
+                "Include cultural elements and societal structures",
+                "Describe the relationship between technology and nature"
+            ],
+            "usageCount": 1234,
+            "rating": 4.8
+        },
+        {
+            "id": 2,
+            "title": "Design a magical forest",
+            "content": "Create a mystical forest scene with glowing plants, magical creatures, and ancient ruins.",
+            "dateAdd": "2024-03-21",
+            "creator": "Fantasy Artist",
+            "likes": 189,
+            "tags": ["Fantasy", "Nature", "Magic", "Adventure", "World Building"],
+            "creatorImage": "/images/NFT-2.svg",
+            "description": "This prompt helps you design enchanting forest scenes with magical elements. Ideal for fantasy art, game environments, or story settings.",
+            "examples": [
+                "A clearing with bioluminescent flowers that respond to movement",
+                "Ancient stone arches covered in glowing runes",
+                "Treehouses connected by magical bridges"
+            ],
+            "tips": [
+                "Consider the time of day and lighting effects",
+                "Include magical flora and fauna",
+                "Add mysterious elements that hint at a larger story"
+            ],
+            "usageCount": 856,
+            "rating": 4.6
+        },
+        {
+            "id": 3,
+            "title": "Portrait of a cyberpunk character",
+            "content": "Design a detailed character portrait with cybernetic enhancements and futuristic fashion.",
+            "dateAdd": "2024-03-22",
+            "creator": "Character Designer",
+            "likes": 312,
+            "tags": ["Character", "Cyberpunk", "Portrait", "Fashion", "Technology"],
+            "creatorImage": "/images/NFT-3.svg",
+            "description": "This prompt helps you create detailed cyberpunk character designs with a focus on fashion and technology integration.",
+            "examples": [
+                "A street samurai with glowing tattoos and mechanical limbs",
+                "A corporate executive with neural interface implants",
+                "A hacker with augmented reality contact lenses"
+            ],
+            "tips": [
+                "Balance human elements with technological enhancements",
+                "Consider the character's background and role",
+                "Include unique fashion elements that reflect the cyberpunk aesthetic"
+            ],
+            "usageCount": 1045,
+            "rating": 4.9
+        }
+    ]
+} 

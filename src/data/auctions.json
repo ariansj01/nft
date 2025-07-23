@@ -1,0 +1,121 @@
+{
+    "auctions": [
+        {
+            "id": 1,
+            "title": "Cyberpunk City #1",
+            "description": "A stunning digital artwork depicting a futuristic cyberpunk city with neon lights and flying vehicles.",
+            "image": "/src/assets/images/NFT-1.svg",
+            "creator": {
+                "name": "DigitalArtist",
+                "image": "/src/assets/images/creator-1.svg",
+                "verified": true
+            },
+            "currentBid": 2.5,
+            "startingPrice": 1.0,
+            "endTime": "2024-04-30T23:59:59",
+            "bids": [
+                {
+                    "bidder": "CryptoCollector",
+                    "amount": 2.5,
+                    "time": "2024-04-23T10:30:00"
+                },
+                {
+                    "bidder": "NFTEnthusiast",
+                    "amount": 2.0,
+                    "time": "2024-04-23T09:15:00"
+                }
+            ],
+            "category": "Digital Art",
+            "tags": ["Cyberpunk", "Cityscape", "Futuristic"],
+            "properties": {
+                "resolution": "4000x3000",
+                "format": "PNG",
+                "layers": 12,
+                "unique": true
+            },
+            "history": {
+                "created": "2024-03-15",
+                "minted": "2024-03-20",
+                "previousSales": 0
+            }
+        },
+        {
+            "id": 2,
+            "title": "Magical Forest #1",
+            "description": "An enchanting digital painting of a magical forest with glowing plants and mystical creatures.",
+            "image": "/images/NFT-2.svg",
+            "creator": {
+                "name": "FantasyArtist",
+                "image": "/images/creator-2.svg",
+                "verified": true
+            },
+            "currentBid": 1.8,
+            "startingPrice": 0.5,
+            "endTime": "2024-04-28T23:59:59",
+            "bids": [
+                {
+                    "bidder": "ArtCollector",
+                    "amount": 1.8,
+                    "time": "2024-04-23T11:45:00"
+                },
+                {
+                    "bidder": "FantasyFan",
+                    "amount": 1.5,
+                    "time": "2024-04-23T10:20:00"
+                }
+            ],
+            "category": "Digital Art",
+            "tags": ["Fantasy", "Nature", "Magic"],
+            "properties": {
+                "resolution": "5000x4000",
+                "format": "PNG",
+                "layers": 15,
+                "unique": true
+            },
+            "history": {
+                "created": "2024-03-10",
+                "minted": "2024-03-15",
+                "previousSales": 1
+            }
+        },
+        {
+            "id": 3,
+            "title": "Abstract Universe #1",
+            "description": "A mesmerizing abstract digital artwork representing the vastness of the universe.",
+            "image": "/images/NFT-3.svg",
+            "creator": {
+                "name": "AbstractArtist",
+                "image": "/images/creator-3.svg",
+                "verified": true
+            },
+            "currentBid": 3.2,
+            "startingPrice": 2.0,
+            "endTime": "2024-05-01T23:59:59",
+            "bids": [
+                {
+                    "bidder": "ArtInvestor",
+                    "amount": 3.2,
+                    "time": "2024-04-23T12:30:00"
+                },
+                {
+                    "bidder": "AbstractLover",
+                    "amount": 3.0,
+                    "time": "2024-04-23T11:15:00"
+                }
+            ],
+            "category": "Abstract Art",
+            "tags": ["Abstract", "Universe", "Space"],
+            "properties": {
+                "resolution": "6000x4000",
+                "format": "PNG",
+                "layers": 20,
+                "unique": true
+            },
+            "history": {
+                "created": "2024-03-20",
+                "minted": "2024-03-25",
+                "previousSales": 2
+            }
+        }
+    ]
+} 
