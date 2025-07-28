@@ -2,7 +2,7 @@
 import { useState, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 import * as THREE from 'three';
-import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
+// import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 import Image from 'next/image';
 
 interface FormData {
@@ -22,7 +22,7 @@ export default function AuthPage() {
     const sceneRef = useRef<THREE.Scene | null>(null);
     const cameraRef = useRef<THREE.PerspectiveCamera | null>(null);
     const rendererRef = useRef<THREE.WebGLRenderer | null>(null);
-    const controlsRef = useRef<OrbitControls | null>(null);
+    // const controlsRef = useRef<OrbitControls | null>(null);
     const particlesRef = useRef<THREE.Points | null>(null);
 
     useEffect(() => {
@@ -52,12 +52,12 @@ export default function AuthPage() {
         renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
         rendererRef.current = renderer;
 
-        // Controls setup
-        const controls = new OrbitControls(camera, renderer.domElement);
-        controls.enableDamping = true;
-        controls.dampingFactor = 0.05;
-        controls.enableZoom = false;
-        controlsRef.current = controls;
+        // Controls setup - temporarily disabled
+        // const controls = new OrbitControls(camera, renderer.domElement);
+        // controls.enableDamping = true;
+        // controls.dampingFactor = 0.05;
+        // controls.enableZoom = false;
+        // controlsRef.current = controls;
 
         // Particles setup
         const particlesGeometry = new THREE.BufferGeometry();
@@ -88,7 +88,7 @@ export default function AuthPage() {
         // Animation
         const animate = () => {
             requestAnimationFrame(animate);
-            controls.update();
+            // controls.update();
             particles.rotation.y += 0.001;
             renderer.render(scene, camera);
         };

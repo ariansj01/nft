@@ -19,7 +19,7 @@ const ParticleBackground = () => {
   const [nodes, setNodes] = useState<Node[]>([]);
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const animationFrameRef = useRef<number>(0);
-
+  console.log(nodes)
   const colors = useMemo(() => [
     '#EFDA1C', // Yellow
     '#00ffe0', // Cyan

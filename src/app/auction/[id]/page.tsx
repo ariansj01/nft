@@ -1,10 +1,10 @@
 'use client';
-import { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 import auctionData from '@/data/auctions.json';
 
-export default function AuctionDetailPage({ params }: { params: { id: string } }) {
+export default function AuctionDetailPage({ params }: { params: Promise<{ id: string }> }) {
     const router = useRouter();
     const [bidAmount, setBidAmount] = useState('');
     const [showBidHistory, setShowBidHistory] = useState(false);
@@ -12,8 +12,16 @@ export default function AuctionDetailPage({ params }: { params: { id: string } }
     const [creatorImageError, setCreatorImageError] = useState(false);
     const [bidError, setBidError] = useState('');
     const [bidSuccess, setBidSuccess] = useState('');
+    const [id, setId] = useState<string>('');
 
-    const auction = auctionData.auctions.find(a => a.id === parseInt(params.id));
+    // Handle async params
+    useEffect(() => {
+        params.then(({ id: paramId }) => {
+            setId(paramId);
+        });
+    }, [params]);
+
+    const auction = auctionData.auctions.find(a => a.id === parseInt(id));
 
     if (!auction) {
         return (

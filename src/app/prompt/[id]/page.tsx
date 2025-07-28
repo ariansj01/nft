@@ -1,5 +1,5 @@
 'use client';
-import { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 import promptsData from '@/data/prompts.json';
@@ -20,12 +20,20 @@ import promptsData from '@/data/prompts.json';
 //     rating: number;
 // }
 
-export default function PromptDetailPage({ params }: { params: { id: string } }) {
+export default function PromptDetailPage({ params }: { params: Promise<{ id: string }> }) {
     const router = useRouter();
     const [isLiked, setIsLiked] = useState(false);
     const [currentLikes, setCurrentLikes] = useState(0);
+    const [id, setId] = useState<string>('');
 
-    const prompt = promptsData.prompts.find(p => p.id === parseInt(params.id));
+    // Handle async params
+    useEffect(() => {
+        params.then(({ id: paramId }) => {
+            setId(paramId);
+        });
+    }, [params]);
+
+    const prompt = promptsData.prompts.find(p => p.id === parseInt(id));
 
     if (!prompt) {
         return (
