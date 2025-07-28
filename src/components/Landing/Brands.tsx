@@ -1,10 +1,8 @@
 'use client'
 import Image from 'next/image'
-// @ts-ignore
 import { Splide, SplideSlide } from '@splidejs/react-splide';
-// @ts-ignore
 import { AutoScroll } from '@splidejs/splide-extension-auto-scroll';
-import '@splidejs/react-splide/css'; // استایل پیش‌فرض
+import '@splidejs/react-splide/css';
 
 export default function Brands() {
     type obgImage = {
