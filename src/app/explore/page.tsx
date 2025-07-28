@@ -45,7 +45,7 @@ export default function ExplorePage() {
             const mockNFTs: NFT[] = Array.from({ length: 30 }, (_, i) => ({
                 id: i + 1,
                 title: `NFT Artwork ${i + 1}`,
-                image: `/images/nft${(i % 5) + 1}.jpg`,
+                image: `/images/CardIMG-${(i % 4) + 1}.svg`,
                 price: Math.random() * 10,
                 likes: Math.floor(Math.random() * 1000),
                 views: Math.floor(Math.random() * 5000),
@@ -54,7 +54,7 @@ export default function ExplorePage() {
                     id: i + 1,
                     name: `Artist ${i + 1}`,
                     username: `artist${i + 1}`,
-                    avatar: `/images/avatar${(i % 3) + 1}.jpg`,
+                    avatar: `/images/User${(i % 4) + 1}.svg`,
                 },
             }));
             setNfts(mockNFTs);

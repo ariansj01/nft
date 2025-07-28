@@ -4,10 +4,10 @@
             "id": 1,
             "title": "Cyberpunk City #1",
             "description": "A stunning digital artwork depicting a futuristic cyberpunk city with neon lights and flying vehicles.",
-            "image": "/src/assets/images/NFT-1.svg",
+            "image": "/images/NFT-1.svg",
             "creator": {
                 "name": "DigitalArtist",
-                "image": "/src/assets/images/creator-1.svg",
+                "image": "/images/User.svg",
                 "verified": true
             },
             "currentBid": 2.5,
@@ -43,10 +43,10 @@
             "id": 2,
             "title": "Magical Forest #1",
             "description": "An enchanting digital painting of a magical forest with glowing plants and mystical creatures.",
-            "image": "/images/NFT-2.svg",
+            "image": "/images/CardIMG-2.svg",
             "creator": {
                 "name": "FantasyArtist",
-                "image": "/images/creator-2.svg",
+                "image": "/images/User2.svg",
                 "verified": true
             },
             "currentBid": 1.8,
@@ -82,10 +82,10 @@
             "id": 3,
             "title": "Abstract Universe #1",
             "description": "A mesmerizing abstract digital artwork representing the vastness of the universe.",
-            "image": "/images/NFT-3.svg",
+            "image": "/images/CardIMG-3.svg",
             "creator": {
                 "name": "AbstractArtist",
-                "image": "/images/creator-3.svg",
+                "image": "/images/User3.svg",
                 "verified": true
             },
             "currentBid": 3.2,

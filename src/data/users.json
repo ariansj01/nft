@@ -5,8 +5,8 @@
             "username": "DigitalArtist",
             "name": "Alex Johnson",
             "bio": "Digital artist specializing in cyberpunk and futuristic themes. Creating unique NFT artworks since 2021.",
-            "avatar": "/src/assets/images/creator-1.svg",
-            "coverImage": "/src/assets/images/cover-1.svg",
+            "avatar": "/images/User.svg",
+            "coverImage": "/images/CardIMG-4.svg",
             "joinedDate": "2021-03-15",
             "verified": true,
             "stats": {
@@ -24,7 +24,7 @@
                 {
                     "id": 1,
                     "title": "Cyberpunk City #1",
-                    "image": "/src/assets/images/NFT-1.svg",
+                    "image": "/images/NFT-1.svg",
                     "price": 2.5,
                     "category": "Digital Art",
                     "dateCreated": "2024-03-15"
@@ -32,7 +32,7 @@
                 {
                     "id": 2,
                     "title": "Neon Dreams",
-                    "image": "/src/assets/images/NFT-2.svg",
+                    "image": "/images/CardIMG-2.svg",
                     "price": 1.8,
                     "category": "Digital Art",
                     "dateCreated": "2024-02-20"
@@ -44,8 +44,8 @@
             "username": "FantasyArtist",
             "name": "Sarah Williams",
             "bio": "Fantasy artist creating magical worlds and creatures. Bringing imagination to life through digital art.",
-            "avatar": "/src/assets/images/creator-2.svg",
-            "coverImage": "/src/assets/images/cover-2.svg",
+            "avatar": "/images/User2.svg",
+            "coverImage": "/images/CardIMG-2.svg",
             "joinedDate": "2021-06-22",
             "verified": true,
             "stats": {
@@ -63,7 +63,7 @@
                 {
                     "id": 3,
                     "title": "Magical Forest",
-                    "image": "/src/assets/images/NFT-3.svg",
+                    "image": "/images/CardIMG-3.svg",
                     "price": 1.5,
                     "category": "Fantasy Art",
                     "dateCreated": "2024-03-10"
@@ -75,8 +75,8 @@
             "username": "AbstractArtist",
             "name": "Michael Chen",
             "bio": "Abstract artist exploring the boundaries of digital art. Creating unique and thought-provoking pieces.",
-            "avatar": "/src/assets/images/creator-3.svg",
-            "coverImage": "/src/assets/images/cover-3.svg",
+            "avatar": "/images/User3.svg",
+            "coverImage": "/images/CardIMG-3.svg",
             "joinedDate": "2021-09-05",
             "verified": false,
             "stats": {
@@ -94,7 +94,7 @@
                 {
                     "id": 4,
                     "title": "Abstract Universe",
-                    "image": "/src/assets/images/NFT-4.svg",
+                    "image": "/images/CardIMG-4.svg",
                     "price": 3.2,
                     "category": "Abstract Art",
                     "dateCreated": "2024-03-20"

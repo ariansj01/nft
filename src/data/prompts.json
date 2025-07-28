@@ -31,7 +31,7 @@
             "creator": "Fantasy Artist",
             "likes": 189,
             "tags": ["Fantasy", "Nature", "Magic", "Adventure", "World Building"],
-            "creatorImage": "/images/NFT-2.svg",
+            "creatorImage": "/images/User2.svg",
             "description": "This prompt helps you design enchanting forest scenes with magical elements. Ideal for fantasy art, game environments, or story settings.",
             "examples": [
                 "A clearing with bioluminescent flowers that respond to movement",
@@ -54,7 +54,7 @@
             "creator": "Character Designer",
             "likes": 312,
             "tags": ["Character", "Cyberpunk", "Portrait", "Fashion", "Technology"],
-            "creatorImage": "/images/NFT-3.svg",
+            "creatorImage": "/images/User3.svg",
             "description": "This prompt helps you create detailed cyberpunk character designs with a focus on fashion and technology integration.",
             "examples": [
                 "A street samurai with glowing tattoos and mechanical limbs",

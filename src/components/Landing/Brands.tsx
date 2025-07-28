@@ -1,11 +1,8 @@
 'use client'
-import Brand1 from '@/assets/images/div.brand__item.svg' 
-import Brand2 from '@/assets/images/div.brand__item1.svg' 
-import Brand3 from '@/assets/images/div.brand__item2.svg' 
-import Brand4 from '@/assets/images/div.brand__item3.svg' 
-import Brand5 from '@/assets/images/brand5.svg' 
 import Image from 'next/image'
+// @ts-ignore
 import { Splide, SplideSlide } from '@splidejs/react-splide';
+// @ts-ignore
 import { AutoScroll } from '@splidejs/splide-extension-auto-scroll';
 import '@splidejs/react-splide/css'; // استایل پیش‌فرض
 
@@ -19,27 +16,27 @@ export default function Brands() {
     {
         id : 1,
         alt : 'Brand 1',
-        src : Brand1
+        src : '/images/div.brand__item.svg'
     } ,
     {
         id : 2,
         alt : 'Brand 2',
-        src : Brand2
+        src : '/images/div.brand__item1.svg'
     } ,
     {
         id : 3,
         alt : 'Brand 3',
-        src : Brand3
+        src : '/images/div.brand__item2.svg'
     } ,
     {
         id : 4,
         alt : 'Brand 4',
-        src : Brand4
+        src : '/images/div.brand__item3.svg'
     } ,
     {
         id : 5,
         alt : 'Brand 5',
-        src : Brand5
+        src : '/images/brand5.svg'
     } ,
     ]
     return(

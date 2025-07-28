@@ -23,7 +23,7 @@ export default function AboutPage() {
             <div className="relative h-[60vh] overflow-hidden">
                 <div className="absolute inset-0">
                     <Image
-                        src="/images/about-hero.jpg"
+                        src="/images/CardIMG-1.svg"
                         alt="About Us Hero"
                         fill
                         className="object-cover opacity-50"
@@ -83,7 +83,7 @@ export default function AboutPage() {
                     </motion.div>
                     <motion.div variants={fadeInUp} className="relative h-[400px]">
                         <Image
-                            src="/images/mission.jpg"
+                            src="/images/CardIMG-2.svg"
                             alt="Our Mission"
                             fill
                             className="object-cover rounded-2xl"
@@ -102,9 +102,9 @@ export default function AboutPage() {
                     <motion.h2 variants={fadeInUp} className="text-3xl font-bold text-white mb-12">Our Team</motion.h2>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                         {[
-                            { name: "John Doe", role: "CEO & Founder", image: "/images/team1.jpg" },
-                            { name: "Jane Smith", role: "CTO", image: "/images/team2.jpg" },
-                            { name: "Mike Johnson", role: "Head of Design", image: "/images/team3.jpg" }
+                            { name: "John Doe", role: "CEO & Founder", image: "/images/User.svg" },
+                            { name: "Jane Smith", role: "CTO", image: "/images/User2.svg" },
+                            { name: "Mike Johnson", role: "Head of Design", image: "/images/User3.svg" }
                         ].map((member, index) => (
                             <motion.div
                                 key={index}
