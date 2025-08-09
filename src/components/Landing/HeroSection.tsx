@@ -29,11 +29,11 @@ export default function HeroSection() {
 ]
  return (
     <main>
-        <section className="grid grid-cols-3 gap-4 mt-5">
-            <div className="col-span-2 text-center">
-                <h2 className="text-7xl font-bold mt-[5%] md:ml-[20%]">NFT MarketPlace This Is The Test</h2>
-                <div className="grid grid-cols-2 gap-4 mt-5">
-                    <div className="text-end me-[7%]">
+        <section className="container mx-auto px-4 grid grid-cols-1 lg:grid-cols-3 gap-6 mt-5">
+            <div className="lg:col-span-2 text-center lg:text-right">
+                <h2 className="font-bold mt-6 text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl">NFT MarketPlace This Is The Test</h2>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-5">
+                    <div className="text-center md:text-start md:me-[7%]">
                         <Link href="/auth" className="mx-2 p-2 rounded-2xl border bg-[#EFDA1C] text-neutral-900">Login now</Link>
                         <button className="mx-2 p-2 rounded-2xl border border-[#00ffe0] text-[#00ffe0]">Market NFT</button>
                     </div>
@@ -45,13 +45,13 @@ export default function HeroSection() {
                 </div>
             </div>
             <div className="text-center">
-                <div className="bg trans20 m-5 rounded-2xl w-[200px]">
+                <div className="bg trans20 m-5 rounded-2xl w-[200px] mx-auto">
                     <Image className="Character" src={Character} alt="Logo" width='200' height='200' />
                 </div>
             </div>
         </section>
 
-        <section className="flex justify-start gap-[20px] ml-[15%] mt-5 text-center">
+        <section className="flex flex-wrap justify-center md:justify-start gap-5 md:mr-[10%] mt-5 text-center">
             {
                arr.map((item , index) => (
                 <div key={index} className="flex justify-center" style={{position:'relative'}}>
@@ -62,9 +62,9 @@ export default function HeroSection() {
                ))
             }
         </section>
-        <section className="flex justify-end" style={{position:'relative'}}>
-            <div className="bg-[url(../assets/images/Rectangle91.svg)] brightness-50 w-[50%] h-full -z-40 absolute right-[50px] top-[-100px]"></div>
-         <Image className="" src={BobCharacter} alt='Bob Character' width='200' height='200' />
+        <section className="relative flex justify-end">
+            <div className="hidden lg:block bg-[url(../assets/images/Rectangle91.svg)] brightness-50 w-[50%] h-full -z-40 absolute right-[50px] top-[-100px]"></div>
+            <Image className="" src={BobCharacter} alt='Bob Character' width='200' height='200' />
         </section>
     </main>
  )   

@@ -78,10 +78,10 @@ const Footer = () => {
     return(
         <>
             <section className="flex justify-center items-center border-t-1 border-stone-700 pt-5 mt-[10vh]" >
-                <div className="flex justify-around items-center gap-[15vh]">
+                <div className="container mx-auto px-4 flex justify-around items-center gap-[15vh] flex-wrap">
                     <div className="flex justify-center items-center flex-col gap-3">
                         <Image className='mx-auto' src={mainLogo} alt='badge' width='200' height='200' />
-                        <p className="w-[50%] text-center" >Join our Discord channel or follow us on Twitter to keep up to date with our latest work and announcements.</p>
+                        <p className="w-full md:w-1/2 text-center" >Join our Discord channel or follow us on Twitter to keep up to date with our latest work and announcements.</p>
                         <div className="flex gap-3">
                         <Image className='' src={x} alt='x platform' width='15' height='15' />
                         <Image className='' src={discord} alt='x platform' width='15' height='15' />
@@ -89,7 +89,7 @@ const Footer = () => {
                         </div>
                     </div>
                     
-                    <div className="flex justify-center items-center gap-[8vh] mt-[3vh]" >
+                    <div className="flex justify-center items-center gap-[8vh] mt-[3vh] flex-wrap" >
                         {
                             menu.map((item , index) => (
                                 <div key={index} className="text-center">

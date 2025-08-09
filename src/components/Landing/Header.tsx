@@ -49,8 +49,8 @@ export default function Header() {
         },
     ]
     return (
-      <header className="grid grid-cols-3 gap-4 mt-5">
-        <ul className="flex justify-center gap-5">
+      <header className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-4 mt-5">
+        <ul className="flex justify-center md:justify-start gap-5 flex-wrap">
             {
                 menu1.map(item => (
                     <Link key={item.id} href={item.link}><li>{item.title}</li></Link>
@@ -60,7 +60,7 @@ export default function Header() {
         <div className="flex justify-center">
             <Image className="" src={Logo} alt="Logo" width='200' height='200' />
         </div>
-        <ul className="flex justify-center gap-5">
+        <ul className="flex justify-center md:justify-end gap-5 flex-wrap">
             {
                 menu2.map(item => (
                     <Link key={item.id} href={item.link}><li>{item.title}</li></Link>

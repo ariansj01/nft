@@ -127,7 +127,7 @@ export default function Plans() {
             <Image className='mx-auto my-[15vh]' src={badge} alt='badge' width='50' height='50' />
             <h2 className='text-center mb-[5vh] text-4xl font-bold'>Nfthubs<span className='bg-gradient-to-r from-[#EFDA1C] to-[#00ffe0] text-transparent bg-clip-text' >Plans</span></h2>
 
-            <div className="grid grid-cols-3 gap-[5vh] w-[60%]">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[5vh] w-full max-w-6xl px-4">
                 {
                     Card.map((item , index) => (
                         <div key={index} className="flex justify-center items-start flex-col border-1 border-stone-500 rounded-2xl p-5">

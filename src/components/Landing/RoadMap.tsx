@@ -58,18 +58,17 @@ export default function RoadMap() {
         <section className="flex justify-center items-center flex-col">
             <Image className='mx-auto my-[15vh]' src={badge} alt='badge' width='50' height='50' />
             <h2 className='text-center mb-[5vh] text-4xl font-bold'>How it <span className='bg-gradient-to-r from-[#EFDA1C] to-[#00ffe0] text-transparent bg-clip-text' >works!</span></h2>
-            <div className="flex justify-center items-center flex-col gap-[10vh] w-[60%]">
+            <div className="flex justify-center items-center flex-col gap-[10vh] w-full max-w-5xl px-4">
                 {
                     Card.map((item , index) => (
-                        <div key={index} className="flex justify-center items-start mt-[20vh]">
-                            {item.RTL === false ? (<Image className='' src={item.img} alt={item.alt} width='300' height='300' />) : <></>}
-                            <div className={`flex justify-center items-start flex-col gap-5 ${item.RTL ? 'mr-[20vh]' : 'ml-[20vh]'}`}>
+                        <div key={index} className={`flex flex-col md:flex-row ${item.RTL ? 'md:flex-row-reverse' : ''} justify-center items-start mt-[10vh] gap-8`}>
+                            <Image className='' src={item.img} alt={item.alt} width='300' height='300' />
+                            <div className={`flex justify-center items-start flex-col gap-5`}>
                                 <small className="bg-gradient-to-r from-[#EFDA1C] to-[#00ffe0] text-transparent bg-clip-text">{item.subTitle}</small>
                                 <h3 className="font-bold text-4xl">{item.title}</h3>
                                 <p className="font-light">{item.text}</p>
                                 <Link className="border-b-2 border-stone-100" href={item.buttonLink} >{item.buttonText}</Link>
                             </div>
-                            {item.RTL ? (<Image className='' src={item.img} alt={item.alt} width='300' height='300' />) : <></>}
                         </div>
                     ))
                 }

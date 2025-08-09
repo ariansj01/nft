@@ -89,7 +89,7 @@ export default function Questions() {
     <section className="flex justify-center items-center flex-col">
       <Image className='mx-auto my-[15vh]' src={badge} alt='badge' width='50' height='50' />
       <h2 className='text-center mb-[5vh] text-4xl font-bold'>Awnsered <span className='bg-gradient-to-r from-[#EFDA1C] to-[#00ffe0] text-transparent bg-clip-text'>Your Questions</span></h2>
-      <div className="flex justify-center items-center flex-col rounded-2xl w-[60%] my-[5vh]">
+      <div className="flex justify-center items-center flex-col rounded-2xl w-full max-w-3xl px-4 my-[5vh]">
         {
           Card.map(item => (
             <Accordion 

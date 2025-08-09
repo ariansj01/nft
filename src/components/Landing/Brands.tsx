@@ -38,13 +38,18 @@ export default function Brands() {
     } ,
     ]
     return(
-        <div className="mx-auto w-200 mt-[100px]">
+        <div className="max-w-7xl mx-auto px-4 mt-[100px]">
             <Splide
         options={{
             type: 'loop',
             drag: 'free',
             focus: 'center',
             perPage: 3,
+            breakpoints: {
+              1024: { perPage: 3 },
+              768: { perPage: 2 },
+              480: { perPage: 1 },
+            },
             autoScroll: {
             speed: 1,
             },

@@ -1,4 +1,4 @@
-'use component'
+'use client'
 import Image from "next/image";
 import badge from "@/assets/images/Badge.svg";
 import avatar1 from "@/assets/images/User.svg";
@@ -58,7 +58,7 @@ export default function Comments() {
         <section className="flex justify-center items-center flex-col">
             <Image className='mx-auto my-[15vh]' src={badge} alt='badge' width='50' height='50' />
             <h2 className='text-center mb-[5vh] text-4xl font-bold'>Meet <span className='bg-gradient-to-r from-[#EFDA1C] to-[#00ffe0] text-transparent bg-clip-text' >The Artist</span></h2>
-            <div className="flex justify-center items-center gap-[10vh] w-[60%] my-[5vh]">
+            <div className="flex justify-center items-center gap-[10vh] w-full max-w-6xl px-4 my-[5vh] flex-wrap">
                 {
                     Card.map((item , index) => (
                         <div key={index} className={`flex justify-center items-center flex-col gap-5 ${item.class}`}>

@@ -40,7 +40,7 @@ export default function NumberStatus () {
     return (
         <section className="flex justify-center items-center flex-col gap-5">
             <Image className='mx-auto my-[15vh]' src={badge} alt='badge' width='50' height='50' />
-            <div className="grid grid-cols-4 gap-[10vh] ">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-10 px-4 ">
                 {
                     Card.map((item , index) => (
                     <div key={index} className={`flex justify-center items-center flex-col pr-5 ${item.class}`}>

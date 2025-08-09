@@ -51,10 +51,10 @@ export default function ChooseUs() {
             <Image className='mx-auto my-[15vh]' src={badge} alt='badge' width='50' height='50' />
             
             <h2 className='text-center mb-[5vh] text-4xl font-bold'>why <span className='bg-gradient-to-r from-[#EFDA1C] to-[#00ffe0] text-transparent bg-clip-text' >choose us</span></h2>
-            <div className="flex gap-4 w-[60%]">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 w-full max-w-6xl px-4">
                 {
                     Card.map(item => (
-                        <div key={item.id} className={`flex flex-col justify-start w-[50%] px-[15px] py-[30px] border border-stone-800 rounded-xl ${item.class}`}>
+                        <div key={item.id} className={`flex flex-col justify-start px-[15px] py-[30px] border border-stone-800 rounded-xl ${item.class}`}>
                             <Image className='' src={item.icon} alt='badge' width='50' height='50' />
                             <h3 className='text-xl font-bold my-[5vh]'>{item.title}</h3>
                             <p>{item.text}</p>

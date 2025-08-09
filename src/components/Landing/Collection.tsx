@@ -56,7 +56,7 @@ export default function Collection () {
     ]
 
     return(
-        <section className='mx-auto w-200' >
+        <section className='max-w-7xl mx-auto px-4' >
             <Image className='mx-auto my-[15vh]' src={badge} alt='badge' width='50' height='50' />
             <h2 className='text-center mb-[5vh] text-4xl font-bold'>Nfthub <span className='bg-gradient-to-r from-[#EFDA1C] to-[#00ffe0] text-transparent bg-clip-text' >Collection</span></h2>
             <Splide
