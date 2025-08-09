@@ -10,7 +10,7 @@ export default function Brands() {
         alt : string,
         src : string
     }
-    const brands : obgImage[] = [ 
+    const brands : obgImage[] = [
     {
         id : 1,
         alt : 'Brand 1',
